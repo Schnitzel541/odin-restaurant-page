@@ -3,7 +3,6 @@ const contentDiv = document.querySelector("#content");
 
 export const homePage = () => {
     const listItems = [];
-
     const welcome = document.createElement("h3");
     welcome.textContent = "Welcome to Schnitzel's restaurant!";
     contentDiv.appendChild(welcome);

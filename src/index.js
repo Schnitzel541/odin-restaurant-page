@@ -1,1 +1,6 @@
-console.log("Hello World!");
+import "./styles.css"
+import { homePage } from "./home";
+
+(() => {
+    homePage();
+})();

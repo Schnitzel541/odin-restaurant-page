@@ -59,3 +59,35 @@ nav > button:hover {
     max-width: 590px;
     padding: 40px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+form > label {
+    font-size: 2rem;
+}
+
+form > #submit-button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 20px;
+    font-size: 2rem;
+    max-width: 50%;
+}
+
+form > #submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(68, 68, 68);
+}
+
+form > input {
+    max-width: 50%;
+}
+
+form > input[type=email] {
+    max-width: 75%;
+}

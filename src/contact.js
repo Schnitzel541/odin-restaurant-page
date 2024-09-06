@@ -36,7 +36,6 @@ export const contact = () => {
     const submitButton = document.createElement("input");
     submitButton.type = "submit";
     submitButton.id = "submit-button";
-    submitButton.innerHTML = "<span>Submit Form</span>"
     form.appendChild(submitButton);
 
     contentDiv.appendChild(form);

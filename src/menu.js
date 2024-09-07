@@ -1,7 +1,12 @@
 const contentDiv = document.querySelector("#content");
 
+
+const addImage = (fileName) => {
+    const image = document.createElement("img");
+    image.src = `../assets/${fileName}`;
+    contentDiv.appendChild(image);
+}
+
 export const menu = () => {
-    const pTag = document.createElement('p');
-    pTag.textContent = "Menu"
-    contentDiv.appendChild(pTag);
+    addImage("restaurant.jpg");
 };

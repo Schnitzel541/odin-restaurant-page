@@ -1,9 +1,13 @@
+import schnitzel from "../assets/schnitzel.jpg";
+import turkishBread from "../assets/turkish-bread.jpg";
+
+
 const contentDiv = document.querySelector("#content");
 
 const domLogic = (function () {
-    const addImage = (fileName) => {
+    const addImage = (src) => {
         const image = document.createElement("img");
-        image.src = `../assets/${fileName}`;
+        image.src = src;
         contentDiv.appendChild(image);
     }
 
@@ -20,8 +24,8 @@ const domLogic = (function () {
 
 export const menu = () => {
     domLogic.createElement("h3", "Schnitzel with lemon");
-    domLogic.addImage("schnitzel.jpg");
+    domLogic.addImage(schnitzel);
 
     domLogic.createElement("h3", "Turkish bread");
-    domLogic.addImage("turkish-bread.jpg")
+    domLogic.addImage(turkishBread);
 };

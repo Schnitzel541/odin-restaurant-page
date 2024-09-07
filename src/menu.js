@@ -24,8 +24,10 @@ const domLogic = (function () {
 
 export const menu = () => {
     domLogic.createElement("h3", "Schnitzel with lemon");
+    domLogic.createElement("p", "A delicious, spicy schnitzel with extra lemon flavouring")
     domLogic.addImage(schnitzel);
 
     domLogic.createElement("h3", "Turkish bread");
+    domLogic.createElement("p", "Break away and eat!")
     domLogic.addImage(turkishBread);
 };
